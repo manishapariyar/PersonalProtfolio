@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,6 +11,7 @@ body,
 .app {
   height: 100%;
   width: 100%;
+  background-color: #DFF5FF;
   font-family: "DM Sans", sans-serif;
   @apply text-gray-700;
 }

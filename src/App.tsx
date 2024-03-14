@@ -1,30 +1,23 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar"
 import { SelectedPage } from "./shared/types";
+import useMediaQuery from "./hooks/useMediaQuery";
 
 
 const  App = () => {
   const [selectedPage,setSelectedPage] = useState<
-  SelectedPage>(SelectedPage.About);
-  const [isTopOfpage,setIsTopOfpage] = useState<boolean>(true);
-  useEffect(()=>{
-    const handleScroll =() =>{
-      if(window.scrollY === 0){
-        setIsTopOfpage(true);
-        setSelectedPage(SelectedPage.About);
-      }
-      // if(window.scrollY !== 0)
-      else
-      {
-        setIsTopOfpage(false);
-      }
-    }
-    window.addEventListener("scroll",handleScroll);
-    return ()=> window.removeEventListener("scroll", handleScroll)
-   },[]);
+  SelectedPage>(SelectedPage.Home);
+  
+  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
+
+ 
   return (
-    <div className= ' app bg-blue-20' >
-      <Navbar/>
+    <div className= 'app bg-blue-dark' >
+      <Navbar
+        
+        selectedPage={selectedPage} 
+         setSelectedPage={setSelectedPage}
+      />
 
     </div>
   )
