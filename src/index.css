@@ -11,7 +11,7 @@ body,
 .app {
   height: 100%;
   width: 100%;
-  background-color: #DFF5FF;
+  background-color: #010026;
   font-family: "DM Sans", sans-serif;
-  @apply text-gray-700;
+  @apply text-white;
 }

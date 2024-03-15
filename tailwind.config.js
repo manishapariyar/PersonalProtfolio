@@ -6,18 +6,21 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
-        "blue-20" :"#DFF5FF",
-        "blue-dark":'#99e9f2',
-        "blue-400":'#5356FF',
-        "light-red": "#FF8B8B",
-        "red-500":'#FF204E',
+      colors: {
+        "deep-blue": "#010026",
+        blue: "#2CBCE9",
+        red: "#DC4492",
+        yellow: "#FDCC49",
+        grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
+      },
+      content:{
+        brush: "url('./assets/brush.png')",
       },
     screens: {
       xs: "480px",
