@@ -17,9 +17,9 @@ const Navbar = ({selectedPage,setSelectedPage}: Props) => {
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
  ;
   return (
-   <nav className={`z-40 w-full fixed top-0 py-6`}>
+   <nav className={` w-full fixed   mb-10`}>
     <div className={`flex items-center justify-between mx-auto w-5/6`}>
-      <img src={logo} alt="logo" className="w-[140px]" />
+      <img src={logo} alt="logo" className="w-[150px] md:w-[180px]" />
       
       {isAboveSmallScreens ? (<div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
            
@@ -52,20 +52,20 @@ const Navbar = ({selectedPage,setSelectedPage}: Props) => {
           
              
             </div>):( <button
-              className="rounded-full bg-red p-2"
+              className="rounded-full bg-white p-2"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              <RiMenu2Fill className="h-6 w-6 text-blue" />
+              <RiMenu2Fill className="h-6 w-6 text-black" />
             </button>
                )}
     </div>
      {/*Mobile menu model*/}
      {!isAboveSmallScreens && isMenuToggled && (
-      <div className="fixed right-0 bottom-0 z-40 h-full w-[200px] bg-red drop-shadow-xl">
+      <div className="fixed right-0 bottom-0 z-40 h-full w-[200px] bg-black drop-shadow-xl">
         {/*close icon*/}
         <div className="flex justify-end p-12">
           <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            <RxCross2 className="h-6 w-6 text-blue"/>
+            <RxCross2 className="h-6 w-6 text-white"/>
           </button>
         </div>
         <div className="ml-[20%] flex flex-col gap-10 text-1xl">

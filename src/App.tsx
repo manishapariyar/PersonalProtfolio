@@ -8,7 +8,7 @@ const  App = () => {
   const [selectedPage,setSelectedPage] = useState<
   SelectedPage>(SelectedPage.Home);
   
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
+ 
 
  
   return (
