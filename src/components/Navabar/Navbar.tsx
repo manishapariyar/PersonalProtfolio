@@ -57,10 +57,10 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
       </div>
       
       {isMenuToggled && (
-        <div className="fixed right-0 bottom-0 h-full w-[200px]  bg-bodyColor drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 h-full w-[200px] bg-bodyColor">
           {/*close icon*/}
           <div className="flex justify-end p-12">
-            <button onClick={() => setIsMenuToggled(false)}>
+            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <RxCross2 className="h-8 w-7 text-designColor" />
             </button>
           </div>
@@ -86,6 +86,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
           </div>
+          
         </div>
       )}
     </nav>

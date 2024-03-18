@@ -19,7 +19,7 @@ const LeftSection = ({setSelectedPage}: Props) => {
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-lg font-normal">
+        <h4 className=" text-2xl font-bold">
           "स्वागतम् मेरो संसारमा"</h4>
         <h1 className="text-6xl font-bold text-white">
           Hi, I'm <span className="text-designColor capitalize">Manisha Pariyar</span>
@@ -32,12 +32,7 @@ const LeftSection = ({setSelectedPage}: Props) => {
             cursorColor="#212428"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide flex-wrap">
-         I'm a Third year BCA student at <span className="text-designColor">Pokhara Universty</span>,
-         I would describe myself as an avid learner with immense  curiosity towards technology.
-        
-         I enjoy learning new skills and implementing them in real life! I believe in community-building and collaboration. 
-        </p>
+       
      
 
       <div className=" flex gap-5  text-sm ">

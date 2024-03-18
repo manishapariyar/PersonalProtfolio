@@ -1,8 +1,8 @@
 import {useState } from "react";
 import Navbar from "./components/Navabar/Navbar"
-import { SelectedPage } from "./shared/types";
-import useMediaQuery from "./hooks/useMediaQuery";
+import { SelectedPage } from "./shared/types"
 import MainSection from "./components/Home/MainSection"
+import AboutSection from "./components/aboutme/AboutSection";
 
 const  App = () => {
   const [selectedPage,setSelectedPage] = useState<
@@ -19,6 +19,7 @@ const  App = () => {
       />
       <div className="max-w-screen-xl mx-auto">
       < MainSection setSelectedPage={setSelectedPage} />
+      <AboutSection setSelectedPage={setSelectedPage}/>
       </div>
     </div>
   )

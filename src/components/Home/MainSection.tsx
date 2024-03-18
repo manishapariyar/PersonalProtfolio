@@ -15,7 +15,7 @@ const MainSection = ({setSelectedPage}: Props) => {
     <section
       id="home"
       className={ `
-      className="w-full pt-10 py-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px]
+      className="w-full pt-10 py-20 flex justify-between flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px]
       xl:
       `}
     >
