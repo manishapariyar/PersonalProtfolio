@@ -12,12 +12,14 @@ const  App = () => {
 
  
   return (
-    <div className= 'app bg-blue-dark' >
+    <div className= 'w-full h-auto bg-bodyColor text-lightText px-4' >
       <Navbar
         selectedPage={selectedPage} 
          setSelectedPage={setSelectedPage}
       />
-        < MainSection setSelectedPage={setSelectedPage} />
+      <div className="max-w-screen-xl mx-auto">
+      < MainSection setSelectedPage={setSelectedPage} />
+      </div>
     </div>
   )
 }

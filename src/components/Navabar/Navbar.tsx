@@ -12,94 +12,84 @@ type Props = {
   setSelectedPage:(value: SelectedPage)=>void;
 }
 
-const Navbar = ({selectedPage,setSelectedPage}: Props) => {
+function Navbar({ selectedPage, setSelectedPage }: Props) {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
- ;
+  const isAboveSmallScreens = useMediaQuery("(min-width:1069px)");
+
   return (
-   <nav className={` w-full fixed   mb-10`}>
-    <div className={`flex items-center justify-between mx-auto w-5/6`}>
-      <img src={logo} alt="logo" className="w-[150px] md:w-[180px]" />
-      
-      {isAboveSmallScreens ? (<div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
-           
-                <Link
-                    page="Home"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="About"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Education/Skills"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Project"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Contact"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  
-          
-             
-            </div>):( <button
-              className="rounded-full bg-white p-2"
-              onClick={() => setIsMenuToggled(!isMenuToggled)}
-            >
-              <RiMenu2Fill className="h-6 w-6 text-black" />
-            </button>
-               )}
-    </div>
-     {/*Mobile menu model*/}
-     {!isAboveSmallScreens && isMenuToggled && (
-      <div className="fixed right-0 bottom-0 z-40 h-full w-[200px] bg-black drop-shadow-xl">
-        {/*close icon*/}
-        <div className="flex justify-end p-12">
-          <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            <RxCross2 className="h-6 w-6 text-white"/>
-          </button>
+    <nav>
+      <div className="w-full h-24 sticky top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
+        <div>
+          <img src={logo} alt="logo"
+            width={180} className="mt-5" />
         </div>
-        <div className="ml-[20%] flex flex-col gap-10 text-1xl">
-                   <Link
-                    page="Home"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="About"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Education/Skills"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Project"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Contact"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  
+        {isAboveSmallScreens ? (
+          <div className="hidden mdl:inline-flex items-center gap-4 lg:gap-8">
+            <Link
+              page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="About"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Education/Skills"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Project"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Contact"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+          </div>
+        ) : (
+          <button
+            className="rounded-full bg-white p-2"
+            onClick={() => setIsMenuToggled(!isMenuToggled)}
+          >
+            <RiMenu2Fill className="h-6 w-6 text-black" />
+          </button>
+        )}
       </div>
-      </div>
-     )}
-   </nav>
-  )
+      
+      {isMenuToggled && (
+        <div className="fixed right-0 bottom-0 h-full w-[200px]  bg-bodyColor drop-shadow-xl">
+          {/*close icon*/}
+          <div className="flex justify-end p-12">
+            <button onClick={() => setIsMenuToggled(false)}>
+              <RxCross2 className="h-8 w-7 text-designColor" />
+            </button>
+          </div>
+          <div className=" flex flex-col gap-10 text-xl ">
+          <Link
+              page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="About"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Education/Skills"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Project"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Contact"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
