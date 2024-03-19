@@ -34,7 +34,11 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
             <Link
-              page="Education/Skills"
+              page="Education"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Skills"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
             <Link
@@ -74,7 +78,11 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
             <Link
-              page="Education/Skills"
+              page="Education"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} />
+            <Link
+              page="Skills"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
             <Link

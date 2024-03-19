@@ -13,5 +13,5 @@ body,
   width: 100%;
   background-color: #d3a29d;
   font-family: "DM Sans", sans-serif;
-  @apply text-white;
+  @apply text-black;
 }
