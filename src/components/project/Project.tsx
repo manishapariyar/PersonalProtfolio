@@ -1,5 +1,5 @@
 import Button from "../../shared/Button";
-import { p1,p2 ,p3 ,p4} from '../../shared/images';
+import { p1,p2 ,p3 ,p4,p5} from '../../shared/images';
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 // type Props = {
 //   Name:string;
@@ -65,6 +65,17 @@ const Class =  () => {
            className="w-[300px]  lgl:w-[380px] h-[240px]" />
         <Button>
         <a href="https://github.com/manishapariyar/my-Portfolio" target="blank">Code</a>
+        </Button>
+       </li>
+     <li className="relative mx-2 inline-block h-[330px] w-[300px] lgl:w-[380px] p-2 bg-slate-800  rounded-sm mb-8">
+         <div className={overlayStyles}>
+            <p className="text-2xl text-white">News webpage </p>
+            <p className="mt-5 text-xl text-green-300">Simple news page  using HTML CSS JS</p>
+           </div>
+           <img src={p5} alt="image"  
+           className="w-[300px]  lgl:w-[380px] h-[240px]" />
+        <Button>
+        <a href="https://github.com/manishapariyar/NewsWebsite/tree/main" target="blank">Code</a>
         </Button>
        </li>
   

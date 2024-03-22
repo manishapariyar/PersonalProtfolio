@@ -6,9 +6,3 @@ export enum SelectedPage{
    Project = "project",
    Contact = "contact"
 }
-export interface ClassType{
-   Name: string;
-   description:string;
-   image:string;
-  
-}
