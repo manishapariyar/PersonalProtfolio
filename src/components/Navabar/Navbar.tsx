@@ -21,7 +21,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
       <div className="w-full h-24 sticky top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
         <div>
           <img src={logo} alt="logo"
-            width={180} className="mt-5" />
+            width={140} className="mt-5 my-2 lgl:mx-10 " />
         </div>
         {isAboveSmallScreens ? (
           <div className="hidden mdl:inline-flex items-center gap-4 lg:gap-8">

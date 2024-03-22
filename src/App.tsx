@@ -4,6 +4,7 @@ import { SelectedPage } from "./shared/types"
 import MainSection from "./components/Home/MainSection"
 import AboutSection from "./components/aboutme/AboutSection";
 import EducationSection from "./components/education/EducationSection";
+import ProjectSection from "./components/project/ProjectSection";
 
 const  App = () => {
   const [selectedPage,setSelectedPage] = useState<
@@ -22,6 +23,7 @@ const  App = () => {
       < MainSection setSelectedPage={setSelectedPage} />
       <AboutSection setSelectedPage={setSelectedPage}/>
       <EducationSection setSelectedPage={setSelectedPage}/>
+      <ProjectSection setSelectedPage={setSelectedPage}/>
       </div>
     </div>
   )
