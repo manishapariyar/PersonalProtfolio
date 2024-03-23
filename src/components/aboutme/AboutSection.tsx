@@ -24,8 +24,8 @@ const AboutSection = ({}: Props) => {
          <div className="flex flex-col  lg:flex lg:justify-between lgl:flex-row items-center mt-8">
           <div className='flex flex-col gap-4 p-2'>
              <h1 className='text-2xl font-bold'>मेरो बारेमा:</h1>
-             <h2 className="text-3xl font-bold text-white  lg:text-xl">
-           I'm a <span className="text-designColor">{text}</span>
+             <h2 className="text-xl font-bold text-white  lg:text-xl">
+           I'm a {" "}<span className="text-designColor">{text}</span>
           <Cursor
             cursorBlinking= {false}
             cursorStyle=""

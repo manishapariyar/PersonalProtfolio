@@ -6,6 +6,8 @@ import AboutSection from "./components/aboutme/AboutSection";
 import EducationSection from "./components/education/EducationSection";
 import ProjectSection from "./components/project/ProjectSection";
 import ContactSection from "./components/contactSection/ContactSection";
+import FooterSection from "./components/footer/FooterSection";
+
 
 const  App = () => {
   const [selectedPage,setSelectedPage] = useState<
@@ -26,6 +28,7 @@ const  App = () => {
       <EducationSection setSelectedPage={setSelectedPage}/>
       <ProjectSection setSelectedPage={setSelectedPage}/>
       <ContactSection setSelectedPage={setSelectedPage}/>
+       <FooterSection/>
       </div>
     </div>
   )

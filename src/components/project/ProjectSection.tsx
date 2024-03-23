@@ -11,7 +11,7 @@ function ProjectSection({setSelectedPage}: Props) {
 
 
   return (
-    <section id="project" className="w-full bg-boxBg py-20">
+    <section id="project" className="w-full  py-20">
       <motion.div
       onViewportEnter={()=>setSelectedPage(SelectedPage.Project)}>
         <motion.div
@@ -38,6 +38,7 @@ function ProjectSection({setSelectedPage}: Props) {
            </ul>
         </div>
       </motion.div>
+      
     </section>
   );
 }

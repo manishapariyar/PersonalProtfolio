@@ -1,6 +1,5 @@
 
 import ActionButton from "../../shared/ActionButton";
-
 import { SelectedPage } from "../../shared/types";
 import {  Cursor, useTypewriter } from 'react-simple-typewriter'
 

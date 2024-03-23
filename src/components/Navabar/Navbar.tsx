@@ -61,7 +61,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
       </div>
       
       {isMenuToggled && (
-        <div className="fixed right-0 bottom-0 h-full w-[200px] bg-bodyColor">
+        <div className="fixed right-0 bottom-0 h-full w-[200px] bg-bodyColor block">
           {/*close icon*/}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

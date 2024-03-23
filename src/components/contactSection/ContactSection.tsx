@@ -24,9 +24,9 @@ const ContactMe = ({ setSelectedPage }: Props) => {
   }
 
   return (
-    <section id="contact" className="mx-auto w-5/6 pt-4 pb-4 mt-4">
-      <Htext> Contact me / <span className="text-xl text-green-300">"सम्पर्क गर्नुहोस्"</span></Htext>
-      <motion.div className="mt-4 basis-3/5 md:mt-0"
+    <section id="contact" className="mx-auto w-5/6 pt-2 pb-2 mt-2">
+      <Htext>Email me</Htext>
+      <motion.div className="mt-2 basis-3/5 md:mt-0"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
