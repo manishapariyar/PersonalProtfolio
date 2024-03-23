@@ -19,7 +19,7 @@ const Class =  () => {
 
   return (
       <>
-     <li className="relative mx-2 inline-block h-[330px] w-[300px] lgl:w-[380px] p-2 bg-slate-800  rounded-sm mb-8">
+     <li className=" mx-2 inline-block h-[330px] w-[300px] lgl:w-[380px] p-2 bg-slate-800  rounded-sm mb-8">
          <div className={overlayStyles}>
             <p className="text-2xl text-white">Simple UI Design</p>
             <p className="mt-5 text-xl text-green-300"> Modern UI/UX design by using Reactjs</p>

@@ -5,6 +5,7 @@ import MainSection from "./components/Home/MainSection"
 import AboutSection from "./components/aboutme/AboutSection";
 import EducationSection from "./components/education/EducationSection";
 import ProjectSection from "./components/project/ProjectSection";
+import ContactSection from "./components/contactSection/ContactSection";
 
 const  App = () => {
   const [selectedPage,setSelectedPage] = useState<
@@ -24,6 +25,7 @@ const  App = () => {
       <AboutSection setSelectedPage={setSelectedPage}/>
       <EducationSection setSelectedPage={setSelectedPage}/>
       <ProjectSection setSelectedPage={setSelectedPage}/>
+      <ContactSection setSelectedPage={setSelectedPage}/>
       </div>
     </div>
   )
