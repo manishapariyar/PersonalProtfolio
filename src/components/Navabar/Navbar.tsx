@@ -18,7 +18,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
 
   return (
     <nav>
-      <div className="w-full h-24 sticky top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
+      <div className="w-full h-24 sticky z-30 py-3 top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
         <div>
           <img src={logo} alt="logo"
             width={140} className="mt-5 my-2 lgl:mx-10 " />
