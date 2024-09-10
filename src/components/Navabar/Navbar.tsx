@@ -9,7 +9,7 @@ import Link from './Link'
 
 type Props = {
   selectedPage: SelectedPage;
-  setSelectedPage:(value: SelectedPage)=>void;
+  setSelectedPage: (value: SelectedPage) => void;
 }
 
 function Navbar({ selectedPage, setSelectedPage }: Props) {
@@ -18,7 +18,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
 
   return (
     <nav>
-      <div className="w-full h-24 sticky z-30 py-3 top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
+      <div className="w-full h-24 sticky z-30 py-3 top-0 bg-gray-900  flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
         <div>
           <img src={logo} alt="logo"
             width={140} className="mt-5 my-2 lgl:mx-10 " />
@@ -59,7 +59,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
           </button>
         )}
       </div>
-      
+
       {isMenuToggled && (
         <div className="fixed right-0 bottom-0 h-full w-[200px] bg-bodyColor block">
           {/*close icon*/}
@@ -69,7 +69,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
             </button>
           </div>
           <div className=" flex flex-col gap-10 text-xl ">
-          <Link
+            <Link
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
@@ -94,7 +94,7 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage} />
           </div>
-          
+
         </div>
       )}
     </nav>
