@@ -7,7 +7,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const ContactMe = ({ setSelectedPage }: Props) => {
+const ContactMe = ({ }: Props) => {
   const inputStyles = `border-2 hover:border-bodyColor mt-5 w-full rounded-lg bg-stale-200 px-5 py-3 placeholder-black`
   const {
     register,

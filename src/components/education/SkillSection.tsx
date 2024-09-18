@@ -25,7 +25,7 @@ const skills = [
   { icon: <SiMongodb className="text-5xl mt-2 text-[#008000]" />, name: "Mongodb" },
 ];
 
-const SkillSection = ({ setSelectedPage }: Props) => {
+const SkillSection = ({ }: Props) => {
   return (
     <div id="skills" className="w-full flex justify-center flex-col gap-2 m-8">
       <h1 className="font-bold text-xl p-4 text-center">Skills & Abilities</h1>
