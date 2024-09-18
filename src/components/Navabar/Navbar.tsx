@@ -18,13 +18,13 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
 
   return (
     <nav>
-      <div className="w-full h-24 sticky z-30 py-3 top-0 bg-gray-900  flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
+      <div className="w-full h-24 sticky z-30 py-3 top-0 bg-transparent  flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 drop-shadow ">
         <div>
           <img src={logo} alt="logo"
             width={140} className="mt-5 my-2 lgl:mx-10 " />
         </div>
         {isAboveSmallScreens ? (
-          <div className="hidden mdl:inline-flex items-center gap-4 lg:gap-8">
+          <div className="hidden mdl:inline-flex items-center mdl:gap-2">
             <Link
               page="Home"
               selectedPage={selectedPage}
@@ -63,9 +63,9 @@ function Navbar({ selectedPage, setSelectedPage }: Props) {
       {isMenuToggled && (
         <div className="fixed right-0 bottom-0 h-full w-[200px] bg-bodyColor block">
           {/*close icon*/}
-          <div className="flex justify-end p-12">
+          <div className="flex justify-end p-9">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <RxCross2 className="h-8 w-7 text-designColor" />
+              <RxCross2 className="h-5 w-7 text-designColor" />
             </button>
           </div>
           <div className=" flex flex-col gap-10 text-xl ">

@@ -1,8 +1,8 @@
-export enum SelectedPage{
+export enum SelectedPage {
    Home = "home",
    About = "about",
    Education = "education",
-   Skills= "skills",
+   Skills = "skills",
    Project = "project",
    Contact = "contact"
 }

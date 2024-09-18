@@ -31,8 +31,8 @@ function ProjectSection({ setSelectedPage }: Props) {
             </p>
           </div>
         </motion.div>
-        <div className="mt-8 h-[390px] w-full mb-4 scroll-smooth">
-          <ul className="w-full whitespace-nowrap overflow-x-auto overflow-y-hidden scrollbar-hide">
+        <div className="mt-8 h-fit w-full mb-4 flex items-center">
+          <ul className="w-full ">
             <Project />
           </ul>
         </div>
