@@ -37,7 +37,7 @@ const ContactMe = ({ }: Props) => {
         }}>
         <form
           onSubmit={onSubmit}
-          method="POST"
+          method="post"
           action="https://formsubmit.co/manishapariyar196@gmail.com"
           acceptCharset="UTF-8"
         >
