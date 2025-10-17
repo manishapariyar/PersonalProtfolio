@@ -9,7 +9,7 @@ type Props = {
 
 const LeftSection = ({ setSelectedPage }: Props) => {
   const [text] = useTypewriter({
-    words: [" passionate Leaner.", "Web-Developer.", "Code Enthusiast.", "programmer!"],
+    words: [" passionate Leaner.", "Web-Developer.", "Code Enthusiast.", "programmer!", "mern Stack Developer.", "Problem Solver."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -27,10 +27,9 @@ const LeftSection = ({ setSelectedPage }: Props) => {
     link.remove();
   };
   return (
-    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+    <div className="w-full  flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-2xl font-bold">
-          "स्वागतम् मेरो संसारमा"</h4>
+
         <h1 className="text-6xl font-bold text-white">
           Hi, I'm <span className="text-designColor capitalize">Manisha Pariyar</span>
         </h1>

@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        bodyColor: "#010101",
+        bodyColor: "#050505",
         lightText: "#c4cfde",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
-        designColor: "#ff014f",
+        designColor: "#303030",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

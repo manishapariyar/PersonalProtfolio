@@ -8,22 +8,22 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const MainSection = ({setSelectedPage}: Props) => {
- 
-  
+const MainSection = ({ setSelectedPage }: Props) => {
+
+
   return (
     <section
       id="home"
-      className={ `
-      className="w-full pt-10 py-20 flex justify-between flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px]
+      className={`
+      className="w-full pt-4  flex justify-between flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px]
       xl:
       `}
     >
-     
 
-     <LeftSection setSelectedPage = {setSelectedPage}/>
-     <RightSection setSelectedPage = {setSelectedPage}/>
-   </section>
+
+      <LeftSection setSelectedPage={setSelectedPage} />
+      <RightSection setSelectedPage={setSelectedPage} />
+    </section>
   )
 }
 export default MainSection
