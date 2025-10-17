@@ -7,7 +7,7 @@ export default {
         bodyColor: "#050505",
         lightText: "#c4cfde",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
-        designColor: "#303030",
+        designColor: "#b73ed0",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

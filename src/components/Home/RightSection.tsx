@@ -16,6 +16,7 @@ const RightSection = ({ }: Props) => {
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0 }
       }}>
+      <div></div>
       <img
         className="lgl:rounded-xl w-[800px] h-auto object-cover"
         src={manisha2}
