@@ -16,7 +16,7 @@ const LeftSection = ({ setSelectedPage }: Props) => {
     delaySpeed: 2000,
   });
 
-  const PDF_URL = "/file_pdf.pdf"
+  const PDF_URL = "/manisha.pdf"
   const downloadFile = (url: string) => {
     const fileName = url.split('/').pop();
     const link = document.createElement('a');
